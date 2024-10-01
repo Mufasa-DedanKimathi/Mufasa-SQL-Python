@@ -1,0 +1,142 @@
+# For else
+
+num = [12,45,60,54,32]
+for number in num:
+    if number % 7 == 0:
+        print(num)
+        break
+else:
+        print("not divisible")
+
+
+# Prime Number
+
+num = 10
+for x in range(2,num):
+    if num % x == 0:
+        print("Not prime")
+        break
+else:
+        print("Prime")
+
+
+# Array
+
+
+# Arrays are not built in python so we must import them.
+# They are a bit similar to lists though doesn't work with multiple data types i.e. if work with intergers you must stick to that and never use any other data type
+
+from array import *
+vals = array("i",[2,3,4,5,6])
+print(vals)
+
+arr = array("i",[])
+n = int(input("Enter the length of the Array"))
+for i in range(n):
+    x = int(input("Enter the next value"))
+    arr.append(x)
+
+# print(arr)
+
+
+from numpy import *     # import numpy
+# Ways of creating Arrays
+# Array()
+
+arr = array([21,23,2,5,67,40])
+print(arr)
+
+# Linspace()
+arr = linspace(0,15,10)
+print(arr)
+
+# zeros()
+arr = zeros(10)
+print(arr)
+
+# Ones()
+arr = ones(10,int)
+print(arr)
+
+# Copying Arrays
+arr1 = array([1,3,5,7,])
+arr = arr1 + 2
+print(arr)
+
+arr1 = array([1,3,5,7])
+arr2 = array([2,4,6,8])
+print(arr1 + arr2)
+
+# Matrix/ Multi Dimensional Arrays
+
+arr = array([
+    [1,2,3,4,5],
+    [6,7,8,9,10]
+])
+print(arr.ndim)
+
+m = matrix('1,2,3,;4,5,6;7,8,9')
+print(m)
+
+m1 = matrix('1,8,3,;4,5,3;10,8,9')
+m2 = m * m1
+print(m2)
+
+
+# Function creation
+
+def name():
+    print("Dedan")
+    print("Kimathi")
+
+name()
+
+def update(x):
+    x=8
+    print(x)
+    
+update(10)
+
+print(name())
+
+# Python Arguments
+def person(name,age):
+    print(name)
+    print(age-5)
+
+person('Dedan',20)
+
+# Hands on practise
+
+# Given two integer numbers, write a Python code to return their product only if the product is equal to or lower than 1000. Otherwise, return their sum.
+number1 = 20
+number2 = 100
+if number1 * number2 <= 1000:
+    print(20 * 100)
+else:
+    print(20 + 100)
+
+# Write a Python code to iterate the first 10 numbers, and in each iteration, print the sum of the current and previous number.
+previous_num = 0
+for i in range(10):
+    sum = previous_num + i
+    print("Current Number", i, "Previous Number", previous_num, "Sum:", sum)
+    previous_num = i
+
+# Write a Python code to accept a string from the user and display characters present at an even index number.
+Python
+
+input_str = input("Enter a string: ")
+for i in range(len(input_str)):
+    if i % 2 == 0:
+        print(input_str[i])
+
+
+
+
+
+
+
+
+
+
